@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -16,15 +17,15 @@ app.get('/', (req, res) => {
 })
 
 //our crochet page
-app.get('/movies', (req, res) => {
-  var title = 'Our Moives page';
-  res.render('pages/Movies', {title:title});
+app.get('/crochet', (req, res) => {
+  var title = 'Our Crochet page';
+  res.render('pages/Crochet', {title:title});
 })
 
 //our sewing page
-app.get('/fashion', (req, res) => {
-  var title = 'Our Fashion page';
-  res.render('pages/Fashion', {title:title});
+app.get('/sewing', (req, res) => {
+  var title = 'Our Sewing page';
+  res.render('pages/Sewing', {title:title});
 })
 
 //our book page
@@ -57,4 +58,3 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
     console.log(data);
 });
-
