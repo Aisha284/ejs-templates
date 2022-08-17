@@ -16,22 +16,22 @@ app.get('/', (req, res) => {
   res.render('pages/index', {title:title});
 })
 
-//our crochet page
-app.get('/crochet', (req, res) => {
-  var title = 'Our Crochet page';
-  res.render('pages/Crochet', {title:title});
+//our movie page
+app.get('/movies', (req, res) => {
+  var title = 'Our movies page';
+  res.render('pages/movies', {title:title});
 })
 
 //our sewing page
-app.get('/sewing', (req, res) => {
-  var title = 'Our Sewing page';
-  res.render('pages/Sewing', {title:title});
+app.get('/fashion', (req, res) => {
+  var title = 'Our Fashion Icons page';
+  res.render('pages/fashion', {title:title});
 })
 
 //our book page
 app.get('/books', (req, res) => {
-  var title = 'Our Books Page';
-  res.render('pages/Books', {title:title});
+  var title = 'Our Favorite Books Page';
+  res.render('pages/books', {title:title});
 })
 
 //users index is our list page
